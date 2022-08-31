@@ -1,3 +1,6 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    return [[pow(i, 2) for i in j] for j in matrix]
+    temp = []
+    for i in matrix:
+        temp.append([j**2 for j in i])
+    return temp
