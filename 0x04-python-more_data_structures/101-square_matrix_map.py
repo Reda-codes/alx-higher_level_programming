@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 def square_matrix_map(matrix=[]):
-    return list(map(lambda matrix : [pow(i, 2) for i in matrix], matrix))
+    return list(map(lambda arr: list(map(lambda i: i**2, arr)) ,matrix))
