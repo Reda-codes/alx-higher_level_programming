@@ -5,8 +5,13 @@ def safe_print_list_integers(my_list=[], x=0):
         try:
             count += 1
             print("{:d}".format(my_list[i]), end='')
-        except Exception as error:
+        except ValueError:
             count -= 1
             pass
+        except TypeError:
+            count -= 1
+            pass
+        except IndexError as error:
+            return (error)
     print('')
     return count
