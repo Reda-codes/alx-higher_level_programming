@@ -9,7 +9,10 @@ class Square:
     a class Square that defines a square
     """
     def __init__(self, size=0, position=(0, 0)):
-        """Inits Square with a private instance attribute: size and possition."""
+        """
+        Inits Square with a private instance attribute:
+        size and possition.
+        """
         self.__size = size
         self.__position = position
 
@@ -45,7 +48,7 @@ class Square:
 
             for i in range(self.size):
                 print(" " * self.position[0] + "#" * self.size)
-    
+
     @property
     def position(self):
         return self.__position
