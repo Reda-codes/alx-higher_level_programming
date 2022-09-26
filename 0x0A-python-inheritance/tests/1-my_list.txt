@@ -1,0 +1,36 @@
+``print_sorted`` module
+================================
+
+Using ``MyList``
+----------------
+
+import ``MyList`` from the ``1-my_list`` module:
+
+    >>> MyList = __import__("1-my_list").MyList
+
+Now use it:
+
+    >>> l = MyList()
+    >>> l
+    []
+
+    >>> l.append(1)
+    >>> l
+    [1]
+
+    >>> l.append(5)
+    >>> l.append(1)
+    >>> l
+    [5, 1]
+
+    >>> l.print_sorted()
+    [1, 5]
+
+    >>> l.append("a")
+    >>> l
+    [5, 1, 'a']
+
+    >>> l.print_sorted()
+    Traceback (most recent call last):
+        ...
+    TypeError: unorderable types: str() < int()
