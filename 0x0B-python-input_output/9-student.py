@@ -16,7 +16,7 @@ class Student:
 
     def to_json(self):
         """
-        function that retrieves a dictionary 
+        function that retrieves a dictionary
         representation of a Student instance
         Args:
             obj: object
