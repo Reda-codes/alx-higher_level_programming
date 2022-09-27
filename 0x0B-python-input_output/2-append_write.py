@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""write_file module"""
+"""append_write module"""
 
 
 def append_write(filename="", text=""):
