@@ -1,16 +1,15 @@
 #!/usr/bin/python3
-"""save_to_json_file module"""
+"""load_from_json_file module"""
 import json
 
 
-def save_to_json_file(my_obj, filename):
+def load_from_json_file(filename):
     """
-        function that writes an Object to a text file,
-        using a JSON representation:
+        function that creates an Object from a “JSON file”:
         Args:
             filename: name of the file
-            my_obj: obkect input
     """
-    with open(filename, "w") as file:
-        json.dump(list(my_obj), file)
+    with open(filename) as file:
+        data = json.load(file)
     file.close()
+    return(data)
