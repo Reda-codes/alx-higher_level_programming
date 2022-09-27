@@ -12,6 +12,6 @@ def write_file(filename="", text=""):
     num = 0
     with open(filename, mode="w", encoding="UTF-8") as file:
         var = file.write(text)
-    
+
     file.close()
     return(var)
