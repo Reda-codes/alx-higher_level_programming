@@ -16,7 +16,7 @@ fileName = "add_item.json"
 
 try:
     obj = load_from_json_file(fileName)
-except:
+except obj.DoesNotExist:
     obj = []
 
 for arg in sys.argv[1:]:
