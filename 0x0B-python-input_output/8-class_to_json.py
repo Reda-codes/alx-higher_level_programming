@@ -10,4 +10,4 @@ def class_to_json(obj):
         Args:
             obj: object input
     """
-    return obj
+    return obj.__dict__
