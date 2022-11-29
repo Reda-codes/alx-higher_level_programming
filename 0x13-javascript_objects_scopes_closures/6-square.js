@@ -15,7 +15,7 @@ class Square extends Base {
       for (let i = 1; i <= this.height; i++) {
         let x = '';
         for (let j = 1; j <= this.width; j++) {
-          x += 'C';
+          x += c;
         }
         console.log(x);
       }
