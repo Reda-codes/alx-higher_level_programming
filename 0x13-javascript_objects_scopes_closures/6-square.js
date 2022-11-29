@@ -3,11 +3,11 @@ const Base = require('./5-square');
 
 class Square extends Base {
   charPrint (c) {
-    if (c) {
+    if (c ===  undefined) {
       for (let i = 1; i <= this.height; i++) {
         let x = '';
         for (let j = 1; j <= this.width; j++) {
-          x += 'C';
+          x += 'X';
         }
         console.log(x);
       }
@@ -15,7 +15,7 @@ class Square extends Base {
       for (let i = 1; i <= this.height; i++) {
         let x = '';
         for (let j = 1; j <= this.width; j++) {
-          x += 'X';
+          x += 'c';
         }
         console.log(x);
       }
