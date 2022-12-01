@@ -17,6 +17,7 @@ if __name__ == '__main__':
         "ORDER BY id ASC".format(sys.argv[4]))
     query_rows = c.fetchall()
     for row in query_rows:
-        print(row)
+        if row[1] == sys.argv[4]:
+            print(row)
     c.close()
     db.close()
