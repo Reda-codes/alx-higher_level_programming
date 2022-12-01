@@ -13,8 +13,8 @@ if __name__ == '__main__':
                          passwd=sys.argv[2], db=sys.argv[3], charset="utf8")
     c = db.cursor()
     c.execute(
-        """SELECT * FROM states
-        WHERE NAME=%s ORDER BY id ASC""", [sys.argv[4]])
+        "SELECT * FROM states WHERE NAME = '{}' "
+        "ORDER BY id ASC".format(sys.argv[4]))
     query_rows = c.fetchall()
     for row in query_rows:
         print(row)
