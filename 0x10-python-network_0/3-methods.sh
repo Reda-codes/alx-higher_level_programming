@@ -1,3 +1,3 @@
 #!/bin/bash
-# Script that takes a URL and displays the size of the body
-curl -sIL "$1" | grep Allow | cut -d " " -f2
+# Script that takes a URL and displays all HTTP methods the server will accept.
+curl -sIL -X get "$1" | grep Allow | cut -d " " -f2
