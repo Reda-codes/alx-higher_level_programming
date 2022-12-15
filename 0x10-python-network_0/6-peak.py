@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """function that finds a peak"""
 
+
 def find_peak(list_of_integers):
     """finds a list peak"""
     ln = len(list_of_integers)
