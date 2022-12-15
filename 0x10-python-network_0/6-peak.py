@@ -11,3 +11,4 @@ def find_peak(list_of_integers):
     elif ln == 2:
         return max(list_of_integers)
     for x in list_of_integers:
+        return max(list_of_integers)
