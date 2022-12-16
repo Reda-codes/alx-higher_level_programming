@@ -8,7 +8,7 @@ from sys import argv
 
 if __name__ == "__main__":
     r = requests.get(f"https://api.github.com/repos/{argv[2]}/{argv[1]}"
-                       "/commits")
+                     "/commits")
     data = r.json()
     i = 0
     for key in data:
