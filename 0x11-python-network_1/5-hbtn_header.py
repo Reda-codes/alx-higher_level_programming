@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """Script that sends request to the URL and gets the variable X-Request-Id """
 import requests
-import sys
+from sys import argv
 
 if __name__ == "__main__":
-    r = requests.get(sys.argv[1])
-    print(r.headers['X-Request-Id'])
+    r = requests.get(argv[1])
+    print(r.headers.get('X-Request-Id'))
