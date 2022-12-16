@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Script that sends a request to the URL and gets the variable X-Request-Id """
+"""Script that sends request to the URL and gets the variable X-Request-Id """
 import requests
 import sys
 
