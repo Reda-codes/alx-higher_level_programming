@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Python script that takes a URL, and displays the value of X-Request-Id"""
-import sys import argv
+from sys import argv
 import urllib.request
 
 if __name__ == '__main__':
